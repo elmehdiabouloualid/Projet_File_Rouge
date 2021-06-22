@@ -29,11 +29,11 @@ if(isset($_POST['pat_submit']))
 //add_payment    
 if(isset($_POST['pay_submit']))
     {
-        $Payment_id=$_POST['Payment_id'];
+        
         $Amount=$_POST['Amount'];
         $customer_id=$_POST['customer_id'];
         $payment_type=$_POST['payment_type'];
-        $query="insert into Payment(Payment_id,Amount,customer_id,payment_type)values('$Payment_id','$Amount','$customer_id','$payment_type')";
+        $query="insert into Payment(Amount,customer_id,payment_type)values('$Amount','$customer_id','$payment_type')";
          $result=mysqli_query($con,$query);
         if($result)
         {
@@ -69,10 +69,10 @@ if(isset($_POST['pay_submit']))
 
 if(isset($_POST['Pack_submit']))
     {
-        $Package_id=$_POST['Package_id'];
+        
         $Package_name=$_POST['Package_name'];
         $Amount=$_POST['Amount'];
-        $query="insert into package(Package_id,Package_name,Amount)values('$Package_id','$Package_name','$Amount')";
+        $query="insert into package(Package_name,Amount)values('$Package_name','$Amount')";
         $result=mysqli_query($con,$query);
         if($result)
         {

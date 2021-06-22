@@ -35,7 +35,7 @@ function get_package(){
         $Package_name=$row['Package_name'];
         $Amount=$row['Amount'];
         echo"<tr>
-        <td>$Package_id</td>
+       
         <td>$Package_name</td>
         <td>$Amount</td>
             
@@ -58,7 +58,7 @@ function get_payment(){
         /*$customer_name=$row['customer_name'];*/
         
         echo"<tr>
-        <td>$Payment_id</td>
+        
         <td>$Amount</td>
         <td>$payment_type</td>
         <td>$customer_id</td>

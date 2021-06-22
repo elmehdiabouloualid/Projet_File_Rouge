@@ -73,7 +73,7 @@ include('../model/connection.php');
      <tr>
             <th>Amount</th>
             <th>Payment Type</th>
-            <th>Customer ID</th>
+            <th>CIN</th>
            <!-- <th>Customer Name</th>-->
          
         </tr>   
@@ -90,13 +90,13 @@ include('../model/connection.php');
                 <form class="form-group" action="../model/fonction_membre_add.php" method="post">
  
                     <label>Amount</label>
-                    <input type="text" name="Amount" class="form-control"><br>
-                    <label>Customer ID</label>
-                    <input type="text" name="customer_id" class="form-control"><br>
+                    <input type="text" name="Amount" class="form-control" required><br>
+                    <label>CIN</label>
+                    <input type="text" name="customer_id" class="form-control"required><br>
                    <!-- <label>Customer Name</label>
                     <input type="text" name="customer_name" class="form-control"><br>-->
                     <label>Payment Type</label>
-                    <input type="text" name="payment_type" class="form-control"><br> 
+                    <input type="text" name="payment_type" class="form-control"required><br> 
                     <input type="submit" class="btn btn-primary" name="pay_submit" value="PAY" style="background-color: #fff; color: #000; border: none; cursor: pointer;">
      </div>
     </div>

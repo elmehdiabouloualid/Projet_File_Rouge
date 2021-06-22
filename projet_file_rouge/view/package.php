@@ -88,9 +88,9 @@ include('../model/connection.php');
                 <form class="form-group" action="../model/fonction_membre_add.php" method="post">
  
                     <label>Package Name</label>
-                    <input type="text" name="Package_name" class="form-control"><br>
+                    <input type="text" name="Package_name" class="form-control"required><br>
                     <label>Amounts</label>
-                    <input type="text" name="Amount" class="form-control"><br>
+                    <input type="text" name="Amount" class="form-control"required><br>
                     <input type="submit" class="btn btn-primary" name="Pack_submit" value="submit" style="background-color: #fff; color: #000; border: none; cursor: pointer;">
      </div>
      </div>
